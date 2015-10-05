@@ -11,7 +11,7 @@
 
 {% if bookmark.tags.count %}
     {% for tag in bookmark.tags.all %}
-        <span class="label label-primary">{{ tag | lower}}</span>&nbsp;
+        <span class="label label-primary">{{ tag | lower }}</span>&nbsp;
     {% endfor %}
 {% endif %}
 
