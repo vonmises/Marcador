@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'marcapp',
+    'crispy_forms',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -105,3 +106,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+LOGIN_URL = 'djangosite_login'
+LOGOUT_URL = 'djangosite_logout'
+LOGOUT_REDIRECT_URL = 'marcapp_bookmark_list'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
