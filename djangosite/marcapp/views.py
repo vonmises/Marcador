@@ -9,7 +9,7 @@ def bookmark_list(request):
     return render(request, 'marcapp/bookmark_list.html', context)
 
 def bookmark_user(request, username):
-    user = request(get_object_or_404, username=username)
+    user = get_object_or_404(User, username=username)
 
     if request.user == user:
         bookmarks = user.bookmarks.all()
