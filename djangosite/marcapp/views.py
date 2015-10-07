@@ -37,7 +37,7 @@ def bookmark_create(request):
     else:
         form = BookmarkForm()
 
-    context = { 'form': form, 'create': true }
+    context = { 'form': form, 'create': True }
 
     return render(request, 'marcapp/form.html', context)
 
